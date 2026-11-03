@@ -429,18 +429,18 @@ export const translations: Record<Language, Translations> = {
       viewGithub: "GitHub'da ko'rish",
       launchLiveDemo: "Demoni ishga tushirish",
       items: {
-        keypulse: {
-          id: "keypulse",
-          title: "KeyPulse: Yuqori Tezlikdagi Kodlash",
-          tagline: "Dasturchilar Uchun Tezkor Terish va Benchmark Platformasi",
+        styping: {
+          id: "styping",
+          title: "styping.uz: Tezkor Yozish Platformasi",
+          tagline: "Tezkor Terish va Dasturchilar Uchun Benchmark Platformasi",
           description:
-            "Haqiqiy kod sintaksisi asosida ko'r-ko'rona tez yozishni mashq qilish uchun mo'ljallangan platforma. Jonli WPM telemetriyasi, nol kechikishdagi qayd va global reyting tizimi.",
+            "Ko'r-ko'rona tez yozish va terish mahoratini oshirish uchun mo'ljallangan zamonaviy platforma. Jonli WPM telemetriyasi, nol kechikishdagi qayd va global reyting tizimi.",
           detailedStory:
-            "Next.js App Router va WebSockets yordamida ishlab chiqilgan bo'lib, klavishlarni bosish kechikishi 1 millisekunddan kam. TypeScript, Rust, Python va C++ tillarida maxsus kod parchalari, qulay statistika va tahliliy grafiklar bilan jihozlangan.",
+            "styping.uz — o'zbek tilida va dasturlash tillarida tezkor yozish (touch typing) mahoratini rivojlantirishga qaratilgan yuqori tezlikdagi platforma. Next.js App Router yordamida <1ms kechikish bilan klavishlar bosilishini aniqlaydi. Foydalanuvchilar o'z WPM tezligi, aniqlik tahlili va yutuqlarini real vaqt rejimida kuzatishi mumkin.",
           badge: "Tezkor Dastur",
           metrics: [
             { label: "Kechikish", value: "<1ms" },
-            { label: "Cho'qqi WPM", value: "142" },
+            { label: "Cho'qqi WPM", value: "142+" },
             { label: "Aniqlik", value: "99.4%" },
           ],
         },
@@ -504,7 +504,7 @@ export const translations: Record<Language, Translations> = {
           description:
             "Musobaqa platformalarida 99.4% aniqlik bilan barqaror 130+ WPM terish ko'rsatkichiga erishdi. Butun ish muhitini Neovim, terminal multipleksatsiyasi va klaviatura asosidagi boshqaruvga moslashtirdi.",
           achievements: [
-            "KeyPulse tezkor kodlash telemetriya trenajyorini yaratdi va ishga tushirdi",
+            "styping.uz tezkor yozish telemetriya trenajyorini yaratdi va ishga tushirdi",
             "Global ko'r-ko'rona terish platformalarida eng kuchli 1% talabalar safiga kirdi",
             "Avtomatlashtirilgan skriptlar va terminal ish oqimlarini ishlab chiqdi",
           ],
@@ -827,18 +827,18 @@ export const translations: Record<Language, Translations> = {
       viewGithub: "View GitHub",
       launchLiveDemo: "Launch Live Demo",
       items: {
-        keypulse: {
-          id: "keypulse",
-          title: "KeyPulse: Elite Speed Coding",
-          tagline: "Touch-Typing & Velocity Benchmark for Engineers",
+        styping: {
+          id: "styping",
+          title: "styping.uz: Speed Typing Platform",
+          tagline: "Touch-Typing & Velocity Benchmark Platform",
           description:
-            "A high-frequency speed coding web platform built for developers to master touch typing on real production syntax. Features live WPM telemetry, zero-latency keystroke recording, and global rank leaderboards.",
+            "A high-frequency speed typing web platform built for developers and enthusiasts to master touch typing. Features live WPM telemetry, zero-latency keystroke recording, and global rank leaderboards.",
           detailedStory:
-            "Engineered with Next.js App Router and WebSockets to achieve sub-millisecond keystroke latency. Includes customized code snippets across TypeScript, Rust, Python, and C++, with comprehensive statistical dashboards capturing raw burst speed, consistency, and finger strain patterns.",
+            "styping.uz is engineered with Next.js App Router and optimized web architecture to achieve sub-millisecond keystroke latency. Includes customized speed challenges, with comprehensive statistical dashboards capturing raw burst speed, consistency, and typing accuracy.",
           badge: "Featured Speed App",
           metrics: [
             { label: "Latency", value: "<1ms" },
-            { label: "WPM Peak", value: "142" },
+            { label: "WPM Peak", value: "142+" },
             { label: "Accuracy", value: "99.4%" },
           ],
         },
@@ -902,7 +902,7 @@ export const translations: Record<Language, Translations> = {
           description:
             "Achieved a sustained 130+ WPM typing benchmark with 99.4% accuracy across competitive typing platforms. Rebuilt entire development flow around Neovim, terminal multiplexing, and keyboard-first system navigation.",
           achievements: [
-            "Built and launched KeyPulse speed coding telemetry trainer",
+            "Built and launched styping.uz speed typing platform",
             "Reached top 1% benchmark on global touch typing & code sprint platforms",
             "Engineered automated script setups and customized terminal workflows",
           ],
@@ -1225,18 +1225,18 @@ export const translations: Record<Language, Translations> = {
       viewGithub: "Смотреть GitHub",
       launchLiveDemo: "Запустить Демо",
       items: {
-        keypulse: {
-          id: "keypulse",
-          title: "KeyPulse: Скоростной Кодинг",
-          tagline: "Спринт Слепой Печати и Бенчмарки для Инженеров",
+        styping: {
+          id: "styping",
+          title: "styping.uz: Скоростная печать",
+          tagline: "Тренажер слепой печати и бенчмарк скорости",
           description:
-            "Платформа скоростного написания кода на реальном синтаксисе. Живая телеметрия WPM, нулевая задержка нажатия клавиш и глобальная таблица лидеров.",
+            "Современная веб-платформа для тренировки слепой печати и скоростного набора. Живая телеметрия WPM, нулевая задержка ввода и таблица лидеров.",
           detailedStory:
-            "Разработано на Next.js App Router и WebSockets с задержкой отклика менее 1 мс. Включает реальные сниппеты на TypeScript, Rust, Python и C++, а также наглядные аналитические дашборды.",
+            "styping.uz разработана на Next.js App Router с ультранизкой задержкой отклика (<1мс). Включает специальные тренажеры, отслеживание пиковой скорости WPM и точную аналитику нажатия клавиш.",
           badge: "Скоростное Приложение",
           metrics: [
             { label: "Пинг", value: "<1ms" },
-            { label: "Пик WPM", value: "142" },
+            { label: "Пик WPM", value: "142+" },
             { label: "Точность", value: "99.4%" },
           ],
         },
@@ -1300,7 +1300,7 @@ export const translations: Record<Language, Translations> = {
           description:
             "Достиг стабильной скорости печати 130+ WPM с точностью 99.4% на соревновательных платформах. Перестроил рабочий процесс вокруг Neovim, tmux и управления с клавиатуры.",
           achievements: [
-            "Разработал и запустил тренажер скоростного кодинга KeyPulse",
+            "Разработал и запустил платформу скоростной печати styping.uz",
             "Вошел в топ-1% мировых рейтингов по слепой печати и спринту кода",
             "Создал автоматизированные скрипты и оптимизированные терминальные пайплайны",
           ],

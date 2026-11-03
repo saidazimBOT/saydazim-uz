@@ -30,22 +30,22 @@ interface ProjectBase {
 
 const PROJECTS: ProjectBase[] = [
   {
-    id: "keypulse",
+    id: "styping",
     image: "/projects/project-1.jpg",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "WebSockets", "Zustand"],
-    liveUrl: "https://github.com",
+    liveUrl: "https://styping.uz",
     githubUrl: "https://github.com",
     accentColor: "from-emerald-400 to-cyan-500",
-    defaultTitle: "KeyPulse: Elite Speed Coding",
-    defaultTagline: "Touch-Typing & Velocity Benchmark for Engineers",
+    defaultTitle: "styping.uz: Speed Typing Platform",
+    defaultTagline: "Touch-Typing & Velocity Benchmark Platform",
     defaultDescription:
-      "A high-frequency speed coding web platform built for developers to master touch typing on real production syntax. Features live WPM telemetry, zero-latency keystroke recording, and global rank leaderboards.",
+      "A high-frequency speed typing web platform built for developers and users to master touch typing. Features live WPM telemetry, zero-latency keystroke recording, and global rank leaderboards.",
     defaultDetailedStory:
-      "Engineered with Next.js App Router and WebSockets to achieve sub-millisecond keystroke latency. Includes customized code snippets across TypeScript, Rust, Python, and C++, with comprehensive statistical dashboards capturing raw burst speed, consistency, and finger strain patterns.",
-    defaultBadge: "Featured Speed App",
+      "styping.uz is engineered with Next.js App Router and optimized web architecture to achieve sub-millisecond keystroke latency. Features real-time WPM calculation, keystroke accuracy telemetry, and competitive leaderboard rankings.",
+    defaultBadge: "Featured Typing App",
     defaultMetrics: [
       { label: "Latency", value: "<1ms" },
-      { label: "WPM Peak", value: "142" },
+      { label: "WPM Peak", value: "142+" },
       { label: "Accuracy", value: "99.4%" },
     ],
   },

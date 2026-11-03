@@ -50,7 +50,7 @@ const BASE_MILESTONES: MilestoneBase[] = [
     defaultDescription:
       "Achieved a sustained 130+ WPM typing benchmark with 99.4% accuracy across competitive typing platforms. Rebuilt entire development flow around Neovim, terminal multiplexing, and keyboard-first system navigation.",
     defaultAchievements: [
-      "Built and launched KeyPulse speed coding telemetry trainer",
+      "Built and launched styping.uz speed typing platform",
       "Reached top 1% benchmark on global touch typing & code sprint platforms",
       "Engineered automated script setups and customized terminal workflows",
     ],
