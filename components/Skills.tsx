@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   Code,
   Server,
-  Wrench,
   Sparkles,
   Layers,
   Cpu,
@@ -51,15 +50,6 @@ const BASE_SKILLS: SkillItem[] = [
     color: "from-blue-400 to-indigo-500",
   },
   {
-    name: "Three.js & WebGL",
-    category: "frontend",
-    level: 88,
-    experience: "Creative 3D",
-    highlight: "Custom GLSL shaders, camera controls, particle systems & physics",
-    icon: Sparkles,
-    color: "from-purple-400 to-pink-500",
-  },
-  {
     name: "Tailwind CSS v4",
     category: "frontend",
     level: 98,
@@ -67,15 +57,6 @@ const BASE_SKILLS: SkillItem[] = [
     highlight: "Glassmorphism, cyber aesthetics, responsive typography & micro-details",
     icon: Layers,
     color: "from-teal-400 to-cyan-500",
-  },
-  {
-    name: "Framer Motion",
-    category: "frontend",
-    level: 92,
-    experience: "Kinetic UI",
-    highlight: "Layout animations, gesture recognition, scroll triggers & spring choreography",
-    icon: Zap,
-    color: "from-pink-400 to-rose-500",
   },
 
   // Backend & Cloud
@@ -106,15 +87,6 @@ const BASE_SKILLS: SkillItem[] = [
     icon: Zap,
     color: "from-amber-400 to-orange-500",
   },
-  {
-    name: "REST & WebSockets",
-    category: "backend",
-    level: 92,
-    experience: "Low Latency",
-    highlight: "Bidirectional streams, heartbeat telemetry, zero packet loss architectures",
-    icon: Cpu,
-    color: "from-cyan-400 to-indigo-500",
-  },
 
   // Developer Tools & Workflow
   {
@@ -144,15 +116,6 @@ const BASE_SKILLS: SkillItem[] = [
     icon: Sparkles,
     color: "from-violet-400 to-purple-600",
   },
-  {
-    name: "Docker & Linux Systems",
-    category: "tools",
-    level: 85,
-    experience: "Containerization",
-    highlight: "Multi-stage builds, shell automation, environment parity & deployment",
-    icon: Wrench,
-    color: "from-blue-400 to-cyan-500",
-  },
 ];
 
 export default function Skills() {
@@ -167,9 +130,21 @@ export default function Skills() {
 
   const categoryTabs = [
     { id: "all" as const, label: t.skills.tabs.all, count: BASE_SKILLS.length },
-    { id: "frontend" as const, label: t.skills.tabs.frontend, count: 5 },
-    { id: "backend" as const, label: t.skills.tabs.backend, count: 4 },
-    { id: "tools" as const, label: t.skills.tabs.tools, count: 4 },
+    {
+      id: "frontend" as const,
+      label: t.skills.tabs.frontend,
+      count: BASE_SKILLS.filter((s) => s.category === "frontend").length,
+    },
+    {
+      id: "backend" as const,
+      label: t.skills.tabs.backend,
+      count: BASE_SKILLS.filter((s) => s.category === "backend").length,
+    },
+    {
+      id: "tools" as const,
+      label: t.skills.tabs.tools,
+      count: BASE_SKILLS.filter((s) => s.category === "tools").length,
+    },
   ];
 
   return (
@@ -353,16 +328,16 @@ export default function Skills() {
             "React 19",
             "TypeScript 5",
             "Tailwind CSS v4",
-            "Three.js",
-            "Framer Motion",
+            "Node.js",
             "Convex",
             "Supabase",
             "PostgreSQL",
             "Zustand",
             "Radix UI",
             "Vite",
-            "Docker",
-            "Linux / Zsh",
+            "Git & GitHub",
+            "Neovim / CLI",
+            "AI Tooling",
           ].map((pill) => (
             <span
               key={pill}

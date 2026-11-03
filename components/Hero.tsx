@@ -79,7 +79,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 backdrop-blur-md mb-6"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 backdrop-blur-md mb-4 sm:mb-5"
             >
               <Sparkles className="w-4 h-4 text-cyan-400 animate-pulse" />
               <span className="text-xs sm:text-sm font-mono text-cyan-300 font-medium">
@@ -87,6 +87,20 @@ export default function Hero() {
               </span>
               <span className="h-1.5 w-1.5 rounded-full bg-cyan-400" />
               <span className="text-xs font-mono text-slate-400">v3.2</span>
+            </motion.div>
+
+            {/* Primary Name Introduction */}
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.25, duration: 0.65 }}
+              className="flex items-center gap-2.5 sm:gap-3.5 mb-2.5 sm:mb-3"
+            >
+              <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-[0_0_12px_rgba(34,211,238,0.9)] animate-pulse shrink-0" />
+              <span className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-300 via-sky-200 to-indigo-300 bg-clip-text text-transparent">
+                {t.hero.fullName || "Saydullaxo'jayev Saidazim"}
+              </span>
+              <span className="hidden sm:inline-block h-px w-10 sm:w-14 bg-gradient-to-r from-cyan-400/60 to-transparent" />
             </motion.div>
 
             {/* Main Headline */}

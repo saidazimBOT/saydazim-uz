@@ -20,21 +20,19 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Saidazim | Creative Developer & IT Innovator",
+  title: "Saydullaxo'jayev Saidazim | Creative Developer & IT Innovator",
   description:
-    "Personal portfolio of Saidazim — Creative Developer & IT Innovator specializing in Next.js, 3D WebGL interactive experiences, speed coding mastery, and modern full-stack development.",
+    "Personal portfolio of Saydullaxo'jayev Saidazim — Creative Developer & IT Innovator specializing in Next.js, speed coding mastery, and modern full-stack development.",
   keywords: [
     "Creative Developer",
     "Full-Stack Developer",
     "Next.js",
     "React",
-    "Three.js",
     "Tailwind CSS",
     "TypeScript",
-    "Framer Motion",
     "Speed Coder",
   ],
-  authors: [{ name: "Saidazim" }],
+  authors: [{ name: "Saydullaxo'jayev Saidazim" }],
   icons: {
     icon: "/favicon.ico",
   },

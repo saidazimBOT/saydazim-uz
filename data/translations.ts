@@ -40,6 +40,7 @@ export interface Translations {
   };
   hero: {
     badge: string;
+    fullName: string;
     titlePrefix: string;
     titleHighlight: string;
     typingRoles: string[];
@@ -221,6 +222,7 @@ export const translations: Record<Language, Translations> = {
     },
     hero: {
       badge: "Yangi Avlod Portfoliosi • 2026 Nashr",
+      fullName: "Saydullaxo'jayev Saidazim",
       titlePrefix: "Kreativ Dasturchi &",
       titleHighlight: "IT Innovator",
       typingRoles: [
@@ -618,6 +620,7 @@ export const translations: Record<Language, Translations> = {
     },
     hero: {
       badge: "Next-Gen Portfolio • 2026 Edition",
+      fullName: "Saydullaxo'jayev Saidazim",
       titlePrefix: "Creative Developer &",
       titleHighlight: "IT Innovator",
       typingRoles: [
@@ -1015,6 +1018,7 @@ export const translations: Record<Language, Translations> = {
     },
     hero: {
       badge: "Портфолио Нового Поколения • 2026",
+      fullName: "Saydullaxo'jayev Saidazim",
       titlePrefix: "Креативный разработчик &",
       titleHighlight: "IT Инноватор",
       typingRoles: [
