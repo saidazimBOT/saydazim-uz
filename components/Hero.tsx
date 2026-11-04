@@ -89,30 +89,30 @@ export default function Hero() {
               <span className="text-xs font-mono text-slate-400">v3.2</span>
             </motion.div>
 
-            {/* Primary Name Introduction */}
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.25, duration: 0.65 }}
-              className="flex items-center gap-2.5 sm:gap-3.5 mb-2.5 sm:mb-3"
-            >
-              <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-[0_0_12px_rgba(34,211,238,0.9)] animate-pulse shrink-0" />
-              <span className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-300 via-sky-200 to-indigo-300 bg-clip-text text-transparent">
-                {t.hero.fullName || "Saydullaxo'jayev Saidazim"}
-              </span>
-              <span className="hidden sm:inline-block h-px w-10 sm:w-14 bg-gradient-to-r from-cyan-400/60 to-transparent" />
-            </motion.div>
-
-            {/* Main Headline */}
+            {/* Main Headline for Personal Name SEO & Visual Hierarchy */}
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-              className="text-4xl sm:text-6xl xl:text-7xl font-extrabold tracking-tight text-white leading-[1.1] mb-6"
+              transition={{ delay: 0.25, duration: 0.8 }}
+              className="flex flex-col items-start mb-6"
             >
-              {t.hero.titlePrefix}{" "}
-              <span className="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">
-                {t.hero.titleHighlight}
+              {/* Primary Personal Name & Subtle Alias Badge */}
+              <span className="inline-flex items-center flex-wrap gap-2.5 sm:gap-3 mb-3">
+                <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-[0_0_12px_rgba(34,211,238,0.9)] animate-pulse shrink-0" />
+                <span className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-300 via-sky-200 to-indigo-300 bg-clip-text text-transparent font-sans">
+                  Saidazim Saydullaxo&apos;jayev
+                </span>
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-indigo-500/15 border border-cyan-400/30 text-xs sm:text-sm font-mono text-cyan-300 font-normal shadow-sm">
+                  @saidazimxoja
+                </span>
+              </span>
+
+              {/* Professional Title Headline */}
+              <span className="text-4xl sm:text-6xl xl:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
+                {t.hero.titlePrefix}{" "}
+                <span className="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                  {t.hero.titleHighlight}
+                </span>
               </span>
             </motion.h1>
 
@@ -231,7 +231,7 @@ export default function Hero() {
                   <div className="relative w-full aspect-[4/5] rounded-2xl overflow-hidden bg-slate-900 border border-white/10 group-hover:border-cyan-500/40 transition-colors">
                     <Image
                       src={profilePic}
-                      alt="Saidazim - Creative Developer Profile"
+                      alt="Saidazim Saydullaxo'jayev - saidazimxoja"
                       fill
                       priority
                       className="object-cover object-[center_25%] group-hover:scale-105 transition-transform duration-700 ease-out"
@@ -258,8 +258,8 @@ export default function Hero() {
                     <div className="flex items-center gap-3">
                       <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
                       <div>
-                        <div className="text-xs font-semibold text-white">Saidazim</div>
-                        <div className="text-[11px] font-mono text-slate-400">{t.hero.location}</div>
+                        <div className="text-xs font-semibold text-white">Saidazim Saydullaxo&apos;jayev</div>
+                        <div className="text-[11px] font-mono text-cyan-400">@saidazimxoja • {t.hero.location}</div>
                       </div>
                     </div>
                     <div className="px-2.5 py-1 rounded-md bg-indigo-500/20 text-indigo-300 font-mono text-xs border border-indigo-500/30">

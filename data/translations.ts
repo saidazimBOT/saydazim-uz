@@ -222,7 +222,7 @@ export const translations: Record<Language, Translations> = {
     },
     hero: {
       badge: "Yangi Avlod Portfoliosi • 2026 Nashr",
-      fullName: "Saydullaxo'jayev Saidazim",
+      fullName: "Saidazim Saydullaxo'jayev",
       titlePrefix: "Kreativ Dasturchi &",
       titleHighlight: "IT Innovator",
       typingRoles: [
@@ -620,7 +620,7 @@ export const translations: Record<Language, Translations> = {
     },
     hero: {
       badge: "Next-Gen Portfolio • 2026 Edition",
-      fullName: "Saydullaxo'jayev Saidazim",
+      fullName: "Saidazim Saydullaxo'jayev",
       titlePrefix: "Creative Developer &",
       titleHighlight: "IT Innovator",
       typingRoles: [
@@ -1018,7 +1018,7 @@ export const translations: Record<Language, Translations> = {
     },
     hero: {
       badge: "Портфолио Нового Поколения • 2026",
-      fullName: "Saydullaxo'jayev Saidazim",
+      fullName: "Saidazim Saydullaxo'jayev",
       titlePrefix: "Креативный разработчик &",
       titleHighlight: "IT Инноватор",
       typingRoles: [

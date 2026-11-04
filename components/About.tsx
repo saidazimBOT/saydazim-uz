@@ -309,7 +309,7 @@ export default function About() {
               <div className="relative w-full h-52 sm:h-56 rounded-2xl overflow-hidden bg-slate-950 border border-white/10 group-hover:border-cyan-500/40 transition-all mb-4">
                 <Image
                   src="/workspace.jpg"
-                  alt="Saidazim Developer Workspace"
+                  alt="Saidazim Saydullaxo'jayev - saidazimxoja developer workspace"
                   fill
                   className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
