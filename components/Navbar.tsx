@@ -125,12 +125,12 @@ export default function Navbar() {
 
               {/* Telegram Link */}
               <a
-                href="https://t.me/said_khujayev"
+                href="https://t.me/said_khujayevv"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden lg:flex p-2.5 rounded-xl bg-slate-900/80 border border-white/10 text-slate-300 hover:text-sky-400 hover:border-sky-500/40 transition-all hover:scale-105 shrink-0"
-                aria-label="Telegram: @said_khujayev"
-                title="Telegram: @said_khujayev"
+                aria-label="Telegram: @said_khujayevv"
+                title="Telegram: @said_khujayevv"
               >
                 <TelegramIcon className="w-4 h-4" />
               </a>
@@ -218,11 +218,11 @@ export default function Navbar() {
                 </div>
                 <div className="flex items-center gap-3">
                   <a
-                    href="https://t.me/said_khujayev"
+                    href="https://t.me/said_khujayevv"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-1 text-xs text-sky-400 hover:text-white font-mono"
-                    title="@said_khujayev"
+                    title="@said_khujayevv"
                   >
                     <TelegramIcon className="w-3.5 h-3.5" />
                     Telegram

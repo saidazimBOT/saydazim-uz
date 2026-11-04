@@ -27,12 +27,13 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [telegramDirectUrl, setTelegramDirectUrl] = useState("");
 
   const email = "saidazim.developer@gmail.com";
   const phone = "+998 95 859 0550";
   const phoneRaw = "+998958590550";
-  const telegramHandle = "@said_khujayev";
-  const telegramUrl = "https://t.me/said_khujayev";
+  const telegramHandle = "@said_khujayevv";
+  const telegramUrl = "https://t.me/said_khujayevv";
   const instagramHandle = "@my_code.gm";
   const instagramUrl = "https://instagram.com/my_code.gm";
 
@@ -53,9 +54,34 @@ export default function Contact() {
     if (!formData.name || !formData.contact || !formData.message) return;
 
     setIsSubmitting(true);
+
+    const categoryText =
+      t.contact.categories[formData.projectType as keyof typeof t.contact.categories] ||
+      formData.projectType;
+
+    const formattedMessage = [
+      "Salom Saidazim! 👋",
+      "Portfoliongiz orqali yangi xabar:",
+      "",
+      `👤 Ism: ${formData.name}`,
+      `📱 Aloqa: ${formData.contact}`,
+      `📌 Yo'nalish: ${categoryText}`,
+      "",
+      "💬 Xabar matni:",
+      formData.message,
+    ].join("\n");
+
+    const tgUrl = `https://t.me/said_khujayevv?text=${encodeURIComponent(formattedMessage)}`;
+    setTelegramDirectUrl(tgUrl);
+
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitted(true);
+
+      // Open Telegram direct message
+      if (typeof window !== "undefined") {
+        window.open(tgUrl, "_blank", "noopener,noreferrer");
+      }
 
       // Trigger Celebration Confetti
       confetti({
@@ -64,7 +90,7 @@ export default function Contact() {
         origin: { y: 0.6 },
         colors: ["#06b6d4", "#6366f1", "#a855f7", "#10b981"],
       });
-    }, 1000);
+    }, 400);
   };
 
   return (
@@ -311,6 +337,18 @@ export default function Contact() {
                   <p className="text-sm text-slate-300 max-w-md">
                     {t.contact.successDesc.replace("{name}", formData.name)}
                   </p>
+
+                  {/* Direct Telegram Action */}
+                  <a
+                    href={telegramDirectUrl || telegramUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-sky-500 via-indigo-600 to-cyan-500 text-white font-semibold text-sm shadow-xl shadow-sky-500/25 hover:shadow-sky-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer"
+                  >
+                    <TelegramIcon className="w-4 h-4" />
+                    <span>Telegramda ochish (@said_khujayevv)</span>
+                  </a>
+
                   <button
                     onClick={() => {
                       setSubmitted(false);
@@ -320,6 +358,7 @@ export default function Contact() {
                         projectType: "fullstack",
                         message: "",
                       });
+                      setTelegramDirectUrl("");
                     }}
                     className="px-5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-mono transition-colors cursor-pointer"
                   >
