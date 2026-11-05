@@ -22,33 +22,34 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://saidazimxoja.uz"),
   title: {
-    default: "Saidazim Saydullaxo'jayev | saidazimxoja — Developer Portfolio",
-    template: "%s | Saidazim Saydullaxo'jayev (saidazimxoja)",
+    default: "Saydazim Saydullaxojayev | Dasturchi & Portfolio",
+    template: "%s | Saydazim Saydullaxojayev (saidazimxoja)",
   },
   description:
-    "Official portfolio of Saidazim Saydullaxo'jayev (saidazimxoja). Frontend developer, creator of web projects, and IT innovator.",
+    "Saydazim Saydullaxojayev (saidazimxoja.uz) — Frontend, 3D veb dasturchi va styping.uz loyihasi muallifining shaxsiy portfoliyasi.",
   keywords: [
-    "Saydullaxo'jayev Saidazim",
-    "Saidazim Saydullaxojayev",
-    "Saidazim",
+    "Saydazim Saydullaxojayev",
+    "Saydullaxojayev Saydazim",
     "saidazimxoja",
     "saidazimxoja.uz",
-    "Saidazim portfolio",
-    "dasturchi",
+    "Saydazim",
+    "Saidazim",
+    "styping.uz",
     "frontend developer",
+    "3d web developer",
   ],
-  authors: [{ name: "Saidazim Saydullaxo'jayev", url: "https://saidazimxoja.uz" }],
-  creator: "Saidazim Saydullaxo'jayev",
-  publisher: "Saidazim Saydullaxo'jayev",
+  authors: [{ name: "Saydazim Saydullaxojayev", url: "https://saidazimxoja.uz" }],
+  creator: "Saydazim Saydullaxojayev",
+  publisher: "Saydazim Saydullaxojayev",
   alternates: {
     canonical: "https://saidazimxoja.uz",
   },
   openGraph: {
-    title: "Saidazim Saydullaxo'jayev | saidazimxoja — Developer Portfolio",
+    title: "Saydazim Saydullaxojayev | Dasturchi & Portfolio",
     description:
-      "Official portfolio of Saidazim Saydullaxo'jayev (saidazimxoja). Frontend developer, creator of web projects, and IT innovator.",
+      "Saydazim Saydullaxojayev (saidazimxoja.uz) — Frontend, 3D veb dasturchi va styping.uz loyihasi muallifining shaxsiy portfoliyasi.",
     url: "https://saidazimxoja.uz",
-    siteName: "Saidazim Saydullaxo'jayev Portfolio",
+    siteName: "Saydazim Saydullaxojayev Portfolio",
     locale: "uz_UZ",
     type: "profile",
     images: [
@@ -56,15 +57,15 @@ export const metadata: Metadata = {
         url: "/saidazim.jpg",
         width: 1200,
         height: 630,
-        alt: "Saidazim Saydullaxo'jayev - saidazimxoja",
+        alt: "Saydazim Saydullaxojayev - saidazimxoja",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Saidazim Saydullaxo'jayev | saidazimxoja — Developer Portfolio",
+    title: "Saydazim Saydullaxojayev | Dasturchi & Portfolio",
     description:
-      "Official portfolio of Saidazim Saydullaxo'jayev (saidazimxoja). Frontend developer, creator of web projects, and IT innovator.",
+      "Saydazim Saydullaxojayev (saidazimxoja.uz) — Frontend, 3D veb dasturchi va styping.uz loyihasi muallifining shaxsiy portfoliyasi.",
     creator: "@saidazimxoja",
     images: ["/saidazim.jpg"],
   },
@@ -79,30 +80,46 @@ const jsonLd = {
     {
       "@type": "Person",
       "@id": "https://saidazimxoja.uz/#person",
-      "name": "Saidazim Saydullaxo'jayev",
+      "name": "Saydazim Saydullaxojayev",
       "alternateName": [
-        "Saydullaxojayev Saidazim",
+        "Saydullaxojayev Saydazim",
         "saidazimxoja",
-        "Saidazim"
+        "Saydazim",
+        "Saidazim",
+        "saidazimxoja.uz"
       ],
       "url": "https://saidazimxoja.uz",
       "image": "https://saidazimxoja.uz/saidazim.jpg",
-      "jobTitle": "Frontend Developer",
+      "jobTitle": "Frontend Developer, 3D Web Developer",
+      "knowsAbout": [
+        "Frontend Development",
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Three.js",
+        "3D Web",
+        "Web Development",
+        "styping.uz"
+      ],
       "sameAs": [
         "https://t.me/saidazimxoja",
         "https://github.com/saidazimxoja"
       ],
       "description":
-        "Official portfolio of Saidazim Saydullaxo'jayev (saidazimxoja). Frontend developer, creator of web projects, and IT innovator."
+        "Saydazim Saydullaxojayev (saidazimxoja.uz) — Frontend, 3D veb dasturchi va styping.uz loyihasi muallifining shaxsiy portfoliyasi."
     },
     {
       "@type": "WebSite",
       "@id": "https://saidazimxoja.uz/#website",
       "url": "https://saidazimxoja.uz",
-      "name": "Saidazim Saydullaxo'jayev | saidazimxoja — Developer Portfolio",
-      "alternateName": "saidazimxoja",
+      "name": "Saydazim Saydullaxojayev | Dasturchi & Portfolio",
+      "alternateName": [
+        "saidazimxoja",
+        "saidazimxoja.uz",
+        "Saydazim Saydullaxojayev"
+      ],
       "description":
-        "Official portfolio of Saidazim Saydullaxo'jayev (saidazimxoja). Frontend developer, creator of web projects, and IT innovator.",
+        "Saydazim Saydullaxojayev (saidazimxoja.uz) — Frontend, 3D veb dasturchi va styping.uz loyihasi muallifining shaxsiy portfoliyasi.",
       "publisher": {
         "@id": "https://saidazimxoja.uz/#person"
       }
