@@ -1,12 +1,14 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://saidazimxoja.uz";
+
   return [
     {
-      url: "https://saidazimxoja.uz",
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 1.0,
+      priority: 1,
     },
   ];
 }
